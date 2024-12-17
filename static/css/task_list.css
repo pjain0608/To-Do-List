@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    height: 60 px;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid; */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 50%;
+}
+
+.nav-left div h3 a,  .nav-left div p a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-left div h3 a:hover,  .nav-left div p a:hover {
+    color: beige;
+    text-shadow: 20px 20px 40px rgba(255, 255, 255, 0.5);
+}
+
+.nav-right {
+    color: rgb(0, 0, 0);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .nav-right h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+} */
+
+/* Search Button */
+
+.search-button form {
+    display: inline-block;
+}
+
+.search-button input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.search-button button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Body */
+
+section {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-contents {
+    width: 80%;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: black;
+    word-wrap: break-word;
+    max-width: 200px;
+}
+
+td:hover {
+    text-decoration: underline;
+}
+
+/* Trim long descriptions */
+td:nth-child(3) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 2rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+/* .truncate {
+    width: 15%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+} */

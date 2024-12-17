@@ -1,0 +1,44 @@
+<header>
+    <nav>
+        <div class="nav-left">
+            <div>
+                <h3>
+                    <a href="{% url 'home' %}">
+                        Home
+                    </a>
+                </h3>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'task_list' %}">
+                        To Do List
+                    </a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'history' %}">
+                        History
+                    </a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'contact' %}">
+                        Contact
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="search-button nav-right">
+            {% if is_task_list %}
+                <form method="GET" action="">
+                    <div>
+                        <input type="text" name="search" placeholder="Search tasks" style="padding: 10px;" autocomplete="off">
+                        <button type="submit" style="padding: 11px;">Search</button>
+                    </div>
+                </form>
+            {% endif %}
+        </div>
+    </nav>
+</header>

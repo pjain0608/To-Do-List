@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="{% static 'css/task_list.css' %}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/18573/18573624.png">
+</head>
+<body>
+    {% include 'nav.html' %}
+    <section>
+        <div class="table-contents">
+            <table>
+                <thead>
+                    <th>
+                        S.No
+                    </th>
+                    <!-- <th>
+                        Task ID
+                    </th> -->
+                    <th>
+                        Task Title
+                    </th>
+                </thead>
+                {% for i in data1 %}
+                <tbody>
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <!-- <td>
+                            {{ i.id }}
+                        </td> -->
+                        <td id="links">
+                            <a href="{% url 'display' i.id %}" style="text-decoration: none; color: black;">
+                                {{ i.title }}
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+</body>
+</html>

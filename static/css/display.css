@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    height: 60 px;
+    background-color: black;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid; */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 50%;
+}
+
+.nav-left div h3 a,  .nav-left div p a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-left div h3 a:hover,  .nav-left div p a:hover {
+    color: beige;
+    text-shadow: 20px 20px 40px rgba(255, 255, 255, 0.5);
+}
+
+.nav-right {
+    color: rgb(0, 0, 0);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .nav-right h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+} */
+
+.nav-right button {
+    background-color: white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+}
+
+.nav-right button:hover  {
+    background-color: beige;
+}
+
+.nav-right h1:hover {
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 2rem;
+    width: 40%;
+    height: fit-content;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.button-con button {
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 8rem;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button p {
+    font-size: 1.5rem;
+}
+
+.button-con button:hover {
+    cursor: pointer;
+    /* background-color: aquamarine; */
+}
+
+.delete button:hover {
+    background-color: greenyellow;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
