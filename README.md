@@ -1,5 +1,3 @@
-# To-Do-List
-
 # UI View
 ![Screenshot (7)](https://github.com/user-attachments/assets/7cc22527-b4ae-44aa-a9d5-64eef9a4f808)
 
