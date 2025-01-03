@@ -41,6 +41,12 @@ Database: SQLite
 
 Contributions are welcome to enhance features or improve functionality. Get started and take control of your to-do list today! 🎉
 
+# Upcoming Features
+
+**User Authentication:**
+  -  Secure login and logout functionality using Django's authentication system.
+  -  Only authenticated users can access the application.
+
 # UI View
 ![Screenshot (7)](https://github.com/user-attachments/assets/7cc22527-b4ae-44aa-a9d5-64eef9a4f808)
 
